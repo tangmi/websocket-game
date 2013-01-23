@@ -69,11 +69,23 @@ app.get('/client', client.index);
 
 // socket.io setup
 var io = require('socket.io').listen(server);
+io.set('log level', 2);
 
 var game = require('./game');
 
 game.init(io);
 
 
+var pos = {
+	x: 0,
+	y: 40
+}
+setInterval(function() {
+	pos.x++;
+	if(pos.x > 400) {
+		pos.x = 0;
+	}
+	game.update(pos);
+}, 10);
 
 

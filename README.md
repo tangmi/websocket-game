@@ -9,3 +9,5 @@ runs on:
 
 * node.js
 * socket.io
+
+to run, you need `mongod` running, then just `node app.js`

@@ -1,8 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic);
 
 body {
+	margin: 0;
 	padding: 50px;
 	font: 14px "Open Sans", sans-serif;
+	background: #121223;
+	color: white;
 }
 a {
 	color: #00b7ff;
